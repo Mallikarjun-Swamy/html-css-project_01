@@ -103,6 +103,7 @@ li {
   width: 25%;
   padding: 1rem 2rem;
   text-align: center;
+  border: none;
   background-color: var(--main-color);
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
@@ -399,9 +400,12 @@ main {
 
   & .course-div {
     width: 100%;
+    border-radius: 0.8rem;
     aspect-ratio: 1.1;
     padding: 2rem 2rem 1rem 2rem;
     text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
     &:hover {
       box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
@@ -440,3 +444,208 @@ main {
 }
 
 /*course section starts here*/
+
+/*why choose section starts here*/
+.why-choose--section {
+  background-color: var(--bg-color);
+
+  .container .section-common-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--heading-color);
+  }
+
+  .container .section-common-para {
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+
+  .grid {
+    padding-top: 0rem;
+  }
+
+  .choose-left--div {
+    padding: 2rem;
+    text-align: right;
+
+    .choose-div--one,
+    .choose-div--two,
+    .choose-div--three {
+      .fa-1,
+      .fa-2,
+      .fa-3 {
+        font-size: 2rem;
+        color: var(--main-color);
+        padding: 2rem 2.5rem;
+      }
+
+      .choose-div--heading {
+        font-size: 2rem;
+        font-weight: 600;
+        padding-top: 1rem;
+        color: var(--heading-color);
+      }
+
+      .choose-div--para {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: var(--para-color);
+        padding-bottom: 1.8rem;
+      }
+    }
+  }
+
+  .choose-center--div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 40rem;
+
+    .mobile-portrait {
+      width: 100%;
+      aspect-ratio: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+
+      img {
+        border-radius: 4rem;
+        -webkit-border-radius: 4rem;
+        -moz-border-radius: 4rem;
+        -ms-border-radius: 4rem;
+        -o-border-radius: 4rem;
+      }
+    }
+
+    /* Waves animation */
+    .wave {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 28rem;
+      height: 28rem;
+      background: radial-gradient(circle, #b3d2ff 60%, transparent 100%);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      opacity: 0.5;
+    }
+
+    .wave.wave2 {
+      width: 36rem;
+      height: 36rem;
+      opacity: 0.3;
+      background: radial-gradient(circle, #6ea4f4 60%, transparent 100%);
+    }
+
+    .wave.wave3 {
+      width: 44rem;
+      height: 44rem;
+      opacity: 0.15;
+      background: radial-gradient(circle, #69a1f6 60%, transparent 100%);
+    }
+  }
+
+  .choose-right--div {
+    padding: 2rem;
+
+    .choose-div--one,
+    .choose-div--two,
+    .choose-div--three {
+      .fa-4,
+      .fa-5,
+      .fa-6 {
+        font-size: 2rem;
+        color: var(--main-color);
+        padding: 2rem 2.5rem;
+      }
+
+      .choose-div--heading {
+        font-size: 1.6rem;
+        font-weight: 600;
+        padding: 0.5rem 0;
+        color: var(--heading-color);
+      }
+
+      .choose-div--para {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: var(--para-color);
+        padding-bottom: 1.8rem;
+      }
+    }
+  }
+}
+
+/*why choose section ends here*/
+
+/* contact sectin homepage starts here */
+
+.contact-section-homepage {
+  background-color: var(--bg-color);
+  margin-bottom: 2rem;
+
+  .container {
+    padding: 3rem 2rem 3rem 3rem;
+    border-radius: 0.8rem;
+    width: 60%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+    .contact-content {
+      .fa-solid {
+        padding: 0;
+      }
+
+      .fa-arrow-right-long {
+        color: var(--white-color);
+        background-color: var(--main-color);
+        box-shadow: none;
+        background: transparent;
+      }
+
+      button {
+        width: 40%;
+        cursor: pointer;
+
+        a {
+          display: flex;
+          justify-content: justify;
+          align-items: center;
+          gap: 1rem;
+        }
+      }
+
+      .contact-title {
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--heading-color);
+        padding: 1rem 0;
+      }
+
+      p {
+        font-size: 1.6rem;
+        color: var(--para-color);
+        padding: 0rem 0 2rem 0;
+      }
+    }
+
+    .contact-image {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 60%;
+        aspect-ratio: 1.2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+/* contact section homepage ends here */
