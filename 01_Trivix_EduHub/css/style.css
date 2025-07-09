@@ -148,6 +148,8 @@ li {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   z-index: 50;
+  position: fixed;
+  background-color: var(--bg-color);
 }
 
 .section-navbar .container {
@@ -209,7 +211,7 @@ main {
 
 .section-hero-image img {
   width: 100%;
-  aspect-ratio: 1.5;
+  aspect-ratio: 1;
   align-items: end;
   transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
@@ -249,6 +251,7 @@ main {
 
 .custom-shape-divider-bottom-1751976711 {
   position: absolute;
+
   bottom: 0;
   left: 0;
   width: 100%;
@@ -265,7 +268,7 @@ main {
 }
 
 .custom-shape-divider-bottom-1751976711 .shape-fill {
-  fill: #ffffff;
+  fill: var(--bg-color);
 }
 /* shape divider  code Ends*/
 /* Hero section ends here */
@@ -276,21 +279,32 @@ main {
   text-align: center;
   font-size: 2rem;
   padding: 0 2rem;
+  background-color: var(--bg-color);
 }
 
 .section-about .container {
-  padding: 6rem 3rem 0 0;
+  padding: 6rem 0 2rem 0;
+  text-align: center;
+}
+
+.about-div--heading {
+  font-weight: 700;
+  color: var(--heading-color);
+  margin: 0.5rem 0;
+}
+
+.about-div--para {
+  padding: 0 2rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--para-color);
+  margin: 0.5rem 0 2rem 0;
 }
 
 .about-div .icon img {
-  background-image: linear-gradient(
-    to bottom right,
-    #3d86fa,
-    #4484fb,
-    #679eff,
-    #b3d2ff,
-    #ebf3fe
-  );
+  padding: 1rem;
+  background-image: linear-gradient(to bottom right, #b3d2ff, #ebf3fe);
   border-radius: 50%;
   width: 10rem;
   height: auto;
