@@ -273,6 +273,30 @@ main {
   );
 }
 
+/* shape divider  code*/
+
+.custom-shape-divider-bottom-1752762269 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1752762269 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-bottom-1752762269 .shape-fill {
+  fill: var(--bg-color);
+}
+/* shape divider  code Ends*/
+
 .section-hero-image img {
   width: 100%;
   aspect-ratio: 1;
@@ -311,30 +335,6 @@ main {
   }
 }
 
-/* shape divider  code*/
-
-.custom-shape-divider-bottom-1751976711 {
-  position: absolute;
-
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1751976711 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 131px;
-}
-
-.custom-shape-divider-bottom-1751976711 .shape-fill {
-  fill: var(--bg-color);
-}
-/* shape divider  code Ends*/
 /* Hero section ends here */
 
 /*about section starts here*/
@@ -945,7 +945,7 @@ main {
 
   .section-hero {
     .section-hero-content {
-      margin-bottom: 10rem;
+      margin-bottom: 20rem;
     }
 
     .btn-hero {
